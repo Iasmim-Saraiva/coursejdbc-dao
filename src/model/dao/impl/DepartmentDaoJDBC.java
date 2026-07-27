@@ -78,7 +78,6 @@ public class DepartmentDaoJDBC implements DepartmentDao {
 
             while(rs.next()){
                 Department dep = new Department();
-                dep = new Department();
                 dep.setId(rs.getInt("Id"));
                 dep.setName(rs.getString("Name"));
                 list.add(dep);
